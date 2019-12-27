@@ -1,4 +1,3 @@
-// import { smallPlane, smallFlay, test } from './utils.js';
 let startBtn = document.querySelector('.start-btn');
 let yellowBullets = document.querySelectorAll('.yellow_bullet');
 let rlBullets = document.querySelectorAll('.bullet');
@@ -19,9 +18,6 @@ let findBule;
 let bulletFly;
 let findBullet;
 let score = 0;
-
-console.log(test);
-
 
 //点击开始游戏按钮
 startBtn.addEventListener('click', () => {
