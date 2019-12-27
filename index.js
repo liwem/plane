@@ -1,4 +1,4 @@
-import { smallPlane, smallFlay, test } from './utils.js';
+// import { smallPlane, smallFlay, test } from './utils.js';
 let startBtn = document.querySelector('.start-btn');
 let yellowBullets = document.querySelectorAll('.yellow_bullet');
 let rlBullets = document.querySelectorAll('.bullet');
@@ -365,26 +365,26 @@ function bigFlay() {
 
 // 找到小飞机
 let findSmall;
-// function smallPlane() {
-//     for (let i = 0; i < smallPlanes.length; i++) {
-//         if (smallPlanes[i].offsetTop >= bg.offsetHeight) {
-//             smallPlanes[i].style.top = _.random(-500, -smallPlanes[i].offsetHeight) + 'px';
-//             smallPlanes[i].style.left = _.random(0, bg.offsetWidth - smallPlanes[i].offsetWidth) + 'px';
-//             break;
-//         }
-//     }
-// }
+function smallPlane() {
+    for (let i = 0; i < smallPlanes.length; i++) {
+        if (smallPlanes[i].offsetTop >= bg.offsetHeight) {
+            smallPlanes[i].style.top = _.random(-500, -smallPlanes[i].offsetHeight) + 'px';
+            smallPlanes[i].style.left = _.random(0, bg.offsetWidth - smallPlanes[i].offsetWidth) + 'px';
+            break;
+        }
+    }
+}
 // 让小飞机下落
 let smallFly;
-// function smallFlay() {
-//     for (let j = 0; j < smallPlanes.length; j++) {
-//         if (smallPlanes[j].offsetTop < bg.offsetHeight) {
-//             smallPlanes[j].style.top = smallPlanes[j].offsetTop + 8 + 'px';
-//         } else {
+function smallFlay() {
+    for (let j = 0; j < smallPlanes.length; j++) {
+        if (smallPlanes[j].offsetTop < bg.offsetHeight) {
+            smallPlanes[j].style.top = smallPlanes[j].offsetTop + 8 + 'px';
+        } else {
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
 // 找到中飞机
 let findMiddle;
