@@ -98,7 +98,7 @@ body {
     position: absolute;
     bottom: 80px;
     right: 300px;
-    /* display: none; */
+    display: none;
 }
 
 .yellow_bullet {
